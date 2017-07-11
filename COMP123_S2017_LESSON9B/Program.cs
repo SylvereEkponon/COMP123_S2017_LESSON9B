@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Date : July 11, 2017
  * Description : Demo for Lesson 9
  * version: 0.1 - Created the program class
- * */
+ */
 namespace COMP123_S2017_LESSON9B
 {
     class Program
