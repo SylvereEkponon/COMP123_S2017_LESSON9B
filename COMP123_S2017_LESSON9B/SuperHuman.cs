@@ -11,6 +11,7 @@ using System.Threading.Tasks;
  * version: 0.1 - Created the SuperHuman class
  * version: 0.2 - Added _initialize method
  * Version: 0.3 - Added AddPower method 
+ * Version: 0.4 - Added DisplayPowers method
  */
 
 namespace COMP123_S2017_LESSON9B
@@ -58,9 +59,23 @@ namespace COMP123_S2017_LESSON9B
         }
 
         //PUBLIC METHODS
+        /// <summary>
+        /// This method displays each of the powers stored in the Powers List
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
         public void AddPower(string name, int rank)
         {
             this.Powers.Add(new Power(name, rank));
+        }
+
+
+        public void DisplayPowers()
+        {
+            foreach (Power power in this.Powers)
+            {
+                Console.WriteLine("Power: " + power.Name + " Rank: " + power.Rank);
+            }
         }
         
     }
