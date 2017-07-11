@@ -10,6 +10,7 @@ using System.Threading.Tasks;
  * Description : This is the SuperHuman class extends the Abstract Human class
  * version: 0.1 - Created the SuperHuman class
  * version: 0.2 - Added _initialize method
+ * Version: 0.3 - Added AddPower method 
  */
 
 namespace COMP123_S2017_LESSON9B
@@ -57,6 +58,10 @@ namespace COMP123_S2017_LESSON9B
         }
 
         //PUBLIC METHODS
+        public void AddPower(string name, int rank)
+        {
+            this.Powers.Add(new Power(name, rank));
+        }
         
     }
 }
