@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 /*
  * Name : Sylvere Ekponon
  * Date : July 11, 2017
- * Description : Demo for Lesson 9
- * version: 0.1 - Created the program class
+ * Description : This is the Abstract Human class
+ * version: 0.1 - Created the Abstract Human class
  */
 
 namespace COMP123_S2017_LESSON9B
