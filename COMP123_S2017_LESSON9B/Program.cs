@@ -9,7 +9,9 @@ using System.Threading.Tasks;
  * Description : Demo for Lesson 9
  * version: 0.1 - Created the program class
  * Version: 0.2 - Instantiated an object of type SuperHuman
- * Version: 0.3 - Added a Power to the SuperHuman object 
+ * Version: 0.3 - Added a Power to the SuperHuman object
+ * version: 0.4 - Adde another Power to the SuperHuman object
+ *              - Also displayed all the powers in the Powers List
  */
 namespace COMP123_S2017_LESSON9B
 {
@@ -20,6 +22,8 @@ namespace COMP123_S2017_LESSON9B
             SuperHuman superHuman = new SuperHuman("Super Dude");
             superHuman.Powers.Add(new Power("Spider Climbing", 50));
             superHuman.AddPower("Spider climbing", 50);
+            superHuman.AddPower("Webcasting", 40);
+            superHuman.DisplayPowers();
 
         }
     }
