@@ -13,6 +13,7 @@ using System.Threading.Tasks;
  * Version: 0.3 - Added AddPower method 
  * Version: 0.4 - Added DisplayPowers method
  * version: 0.5 - Overridden the built-in toString method
+ * version: 0.6 - Added stub Method DisplaySkills to the SuperHuman class to conform to the Human class
  */
 
 namespace COMP123_S2017_LESSON9B
@@ -96,6 +97,16 @@ namespace COMP123_S2017_LESSON9B
             }
             outputString += "========================================\n";
             return outputString; 
+        }
+
+        //PUBLIC OVERRIDDEN METHODS
+        /// <summary>
+        /// This is DisplaySkills method
+        /// NEED TO BE IMPLEMENTED
+        /// </summary>
+        public override void DisplaySkills()
+        {
+            Console.WriteLine("Not Implemented!");
         }
 
     }
