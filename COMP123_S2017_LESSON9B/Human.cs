@@ -9,6 +9,7 @@ using System.Threading.Tasks;
  * Date : July 11, 2017
  * Description : This is the Abstract Human class
  * version: 0.1 - Created the Abstract Human class
+ * version: 0.2 - Added public Abstract method DisplaySkills
  */
 
 namespace COMP123_S2017_LESSON9B
@@ -47,6 +48,8 @@ namespace COMP123_S2017_LESSON9B
 
         //PRIVATE METHODS
 
-        //PUBLIC METHODS
+
+        //PUBLIC ABSTRACT METHODS
+        public abstract void DisplaySkills();
     }
 }
