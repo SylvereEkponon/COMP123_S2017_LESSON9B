@@ -15,6 +15,7 @@ using System.Threading.Tasks;
  * version: 0.5 - used the toString method 
  * version: 0.6 - Implemented the SuperHero class
  * version: 0.7 - Outputed the Karma value
+ * version: 0.8 - Implemented the SuperVillain class
  */
 namespace COMP123_S2017_LESSON9B
 {
@@ -22,12 +23,11 @@ namespace COMP123_S2017_LESSON9B
     {
         static void Main(string[] args)
         {
-            SuperHero superHero = new SuperHero("Super Dude",40);
-            superHero.Powers.Add(new Power("Spider Climbing", 50));
-            superHero.AddPower("Spider climbing", 50);
-            superHero.AddPower("Webcasting", 40);
-            Console.WriteLine(superHero.ToString());
-            Console.WriteLine("Karma: " + superHero.Karma);
+            SuperVillain superVillain = new SuperVillain("Super Lyer",100);
+            superVillain.AddPower("Cheating", 50);
+            superVillain.AddPower("Stealing", 40);
+            Console.WriteLine(superVillain.ToString());
+            Console.WriteLine("Malice: " + superVillain.Malice);
 
         }
     }
