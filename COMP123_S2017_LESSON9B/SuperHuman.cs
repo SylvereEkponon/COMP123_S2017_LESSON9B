@@ -12,6 +12,7 @@ using System.Threading.Tasks;
  * version: 0.2 - Added _initialize method
  * Version: 0.3 - Added AddPower method 
  * Version: 0.4 - Added DisplayPowers method
+ * version: 0.5 - Overridden the built-in toString method
  */
 
 namespace COMP123_S2017_LESSON9B
@@ -77,6 +78,25 @@ namespace COMP123_S2017_LESSON9B
                 Console.WriteLine("Power: " + power.Name + " Rank: " + power.Rank);
             }
         }
-        
+
+        /// <summary>
+        /// Overridden the built-in toString method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string outputString = "";
+            outputString += "========================================\n";
+            outputString += "SuperHuman Name: " + this.Name + "\n";
+            outputString += "========================================\n";
+            foreach (Power power in this.Powers)
+            {
+                outputString += "Power: " + power.Name + " Rank: " + power.Rank;
+
+            }
+            outputString += "========================================\n";
+            return outputString; 
+        }
+
     }
 }
