@@ -12,6 +12,7 @@ using System.Threading.Tasks;
  * Version: 0.3 - Added a Power to the SuperHuman object
  * version: 0.4 - Adde another Power to the SuperHuman object
  *              - Also displayed all the powers in the Powers List
+ * version: 0.5 - used the toString method              
  */
 namespace COMP123_S2017_LESSON9B
 {
@@ -23,7 +24,7 @@ namespace COMP123_S2017_LESSON9B
             superHuman.Powers.Add(new Power("Spider Climbing", 50));
             superHuman.AddPower("Spider climbing", 50);
             superHuman.AddPower("Webcasting", 40);
-            superHuman.DisplayPowers();
+            Console.WriteLine(superHuman.ToString());
 
         }
     }
