@@ -9,6 +9,7 @@ using System.Threading.Tasks;
  * Date : July 13, 2017
  * Description : Demo for Lesson 9
  * version: 0.1 - Created the SuperHero class
+ * version: 0.2 - Modified Constructor to take Karma Value 
  */
 
 namespace COMP123_S2017_LESSON9B
@@ -42,9 +43,9 @@ namespace COMP123_S2017_LESSON9B
         /// It takes one parameter - name(string)
         /// </summary>
         /// <param name="name"></param>
-        public SuperHero(string name) : base(name)
+        public SuperHero(string name, int karma) : base(name)
         {
-
+            this.Karma = karma;
         }
     }
 }
