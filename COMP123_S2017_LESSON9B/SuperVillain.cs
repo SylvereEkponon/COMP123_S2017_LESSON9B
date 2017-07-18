@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /*
  * Name : Sylvere Ekponon
  * Date : July 13, 2017
- * Description : This is the SuperHero class which inherits from the SuperHuman class and implements the IHasMalice Interface
+ * Description : This is the SuperVillain class which inherits from the SuperHuman class and implements the IHasMalice Interface
  * version: 0.1 - Created the SuperVillain class
  */
 
@@ -37,7 +37,12 @@ namespace COMP123_S2017_LESSON9B
 
 
         //CONSTRUCTORS
-
+        /// <summary>
+        /// This is the main constructor of the superVillain class
+        /// It takes two arguments name (string) - malice(int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="malice"></param>
         public SuperVillain(string name, int malice) : base(name)
         {
             this.Malice = malice;
